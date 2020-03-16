@@ -1,0 +1,25 @@
+{
+  "name": "durak",
+  "version": "1.0.0",
+  "description": "Durak Card Game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TonyVas/durak.git"
+  },
+  "author": "Antony Vasiliev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TonyVas/durak/issues"
+  },
+  "homepage": "https://github.com/TonyVas/durak#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "socket.io": "^2.3.0"
+  }
+}
