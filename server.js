@@ -1,6 +1,7 @@
 const clientPath = `${__dirname}/client`;
 const IMG_FOLDER = __dirname + '/assets/imgs/';
 const IMG_EXT = '.png';
+const RANDOM_DELAY_FACTOR = 0;
 const port = process.env.PORT || 9000;
 
 const Deck = require(__dirname + '/assets/Deck');
@@ -59,7 +60,7 @@ async function sendAllImages(socket){
         obj[path.basename(srcs[i], IMG_EXT)] = fs.readFileSync(IMG_FOLDER + srcs[i]);
         socket.emit('client_connect_res', obj);
         console.log('sent: ' + srcs[i])
-        await sleep(Math.random() * 75);
+        await sleep(Math.random() * RANDOM_DELAY_FACTOR);
     }
 }
 
